@@ -1,13 +1,19 @@
 module "azurerm_resource_group" {
   source              = "../modules/resource_group"
+
   resource_group_name = "rameshwari"
   location            = "west us"
+  resource_group_name = "akshay11"
+  location            = "south india"
+
 }
 
 module "azurerm_resource_group" {
   source              = "../modules/resource_group"
   resource_group_name = "ram"
   location            = "west us"
+  resource_group_name = "akash"
+  location            = "south india"
 }
 
 module "vnet" {
