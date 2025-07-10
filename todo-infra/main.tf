@@ -4,6 +4,12 @@ module "azurerm_resource_group" {
   location            = "India Central"
 }
 
+module "azurerm_resource_group" {
+  source              = "../modules/resource_group"
+  resource_group_name = "akash"
+  location            = "India Central"
+}
+
 module "vnet" {
   depends_on = [ module.azurerm_resource_group ]
 source = "../modules/virtual_network"
